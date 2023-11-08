@@ -39,16 +39,16 @@ public class TipoUsuarioResources {
 	public Response inserir(TipoUsuario tipoUsuario, @Context UriInfo uriInfo) throws ClassNotFoundException, SQLException {
 		tipoUsuarioBo.inserirBO(tipoUsuario);
 		UriBuilder builder = uriInfo.getAbsolutePathBuilder();
-		builder.path(Long.toString(tipoUsuario.getIdTipoUsuario()));
+		builder.path(Integer.toString(tipoUsuario.getIdTipoUsuario()));
 		return Response.created(builder.build()).build();
 	}
 	
 	
 	// Atualizar
 	@PUT
-	@Path("/{id}")
+	@Path("/{idTipoUsuario}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response atualizar(TipoUsuario tipoUsuario, @PathParam("id") Long id) throws ClassNotFoundException, SQLException {
+	public Response atualizar(TipoUsuario tipoUsuario, @PathParam("idTipoUsuario") int idTipoUsuario) throws ClassNotFoundException, SQLException {
 		tipoUsuarioBo.atualizarBO(tipoUsuario);
 		return Response.ok().build();
 	}
@@ -58,7 +58,7 @@ public class TipoUsuarioResources {
 	@DELETE
 	@Path("/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response deletar(@PathParam("id") Long id) throws ClassNotFoundException, SQLException {
+	public Response deletar(@PathParam("id") int id) throws ClassNotFoundException, SQLException {
 		tipoUsuarioBo.deletarBO(id);
 		return Response.ok().build();
 	}

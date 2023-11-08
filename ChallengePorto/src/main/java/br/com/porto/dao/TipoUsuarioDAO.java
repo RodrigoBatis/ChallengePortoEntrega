@@ -33,12 +33,12 @@ public class TipoUsuarioDAO {
 
 	// Delete
 
-	public String deletar(Long id) throws SQLException {
+	public String deletar(int id) throws SQLException {
 
 		PreparedStatement stmt = guinchAppConexao
 				.prepareStatement("DELETE FROM T_GPP_TIPO_USUARIO WHERE ID_TIPO_USUARIO = ?");
 
-		stmt.setLong(1, id);
+		stmt.setInt(1, id);
 		stmt.executeUpdate();
 		stmt.close();
 
@@ -50,7 +50,7 @@ public class TipoUsuarioDAO {
 		PreparedStatement stmt = guinchAppConexao
 				.prepareStatement(" Update T_GPP_TIPO_USUARIO set ds_nivel_acesso = ? where id_tipo_usuario = ?");
 		stmt.setString(1, tipoUsuario.getNivelAcesso());
-		stmt.setLong(2, tipoUsuario.getIdTipoUsuario());
+		stmt.setInt(2, tipoUsuario.getIdTipoUsuario());
 		stmt.executeUpdate();
 		stmt.close();
 
@@ -66,7 +66,7 @@ public class TipoUsuarioDAO {
 
 		while (rs.next()) {
 			TipoUsuario tipoUsuario = new TipoUsuario();
-			tipoUsuario.setIdTipoUsuario(rs.getLong(1));
+			tipoUsuario.setIdTipoUsuario(rs.getInt(1));
 			tipoUsuario.setNivelAcesso(rs.getString(2));
 			listaTipoUsuario.add(tipoUsuario);
 		}

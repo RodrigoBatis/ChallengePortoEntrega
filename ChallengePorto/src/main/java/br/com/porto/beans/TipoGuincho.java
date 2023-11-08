@@ -1,5 +1,8 @@
 package br.com.porto.beans;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class TipoGuincho {
 
 	private Long idTipoGuincho;

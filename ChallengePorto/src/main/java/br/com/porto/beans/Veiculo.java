@@ -2,8 +2,11 @@ package br.com.porto.beans;
 
 import java.text.ParseException;
 import java.util.Date;
-import java.text.SimpleDateFormat;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+import java.text.SimpleDateFormat;
+@XmlRootElement
 public class Veiculo {
 	
 	private Long idVeiculo;

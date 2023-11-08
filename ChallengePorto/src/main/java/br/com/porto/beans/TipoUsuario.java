@@ -5,21 +5,21 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class TipoUsuario {
 	
-	private Long idTipoUsuario;
+	private int idTipoUsuario;
 	private String nivelAcesso;
 	
 	public TipoUsuario() {
 		super();
 	}
 
-	public TipoUsuario(Long idTipoUsuario, String nivelAcesso) {
+	public TipoUsuario(int idTipoUsuario, String nivelAcesso) {
 		super();
 		this.idTipoUsuario = idTipoUsuario;
 		this.nivelAcesso = nivelAcesso;
 	}
 
 
-	public void setIdTipoUsuario(Long idTipoUsuario) {
+	public void setIdTipoUsuario(int idTipoUsuario) {
 		this.idTipoUsuario = idTipoUsuario;
 	}
 
@@ -27,7 +27,7 @@ public class TipoUsuario {
 		this.nivelAcesso = nivelAcesso;
 	}
 	
-	public long getIdTipoUsuario() {
+	public int getIdTipoUsuario() {
 		return idTipoUsuario;
 	}
 
@@ -35,9 +35,4 @@ public class TipoUsuario {
 		return nivelAcesso;
 	}
 
-
-	
-	
-	//Verificar nivel Usuario
-	
 }

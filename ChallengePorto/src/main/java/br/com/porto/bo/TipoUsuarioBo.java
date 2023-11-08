@@ -32,7 +32,7 @@ public class TipoUsuarioBo {
 	}
 
 	// deletar
-	public void deletarBO(Long id) throws ClassNotFoundException, SQLException {
+	public void deletarBO(int id) throws ClassNotFoundException, SQLException {
 		TipoUsuarioDAO tipoUsuarioDAO = new TipoUsuarioDAO();
 		tipoUsuarioDAO.deletar(id);
 	}
