@@ -1,4 +1,4 @@
-package br.com.porto.main;
+package br.com.porto.main.tipoUsuario;
 
 import java.sql.SQLException;
 import java.util.ArrayList;

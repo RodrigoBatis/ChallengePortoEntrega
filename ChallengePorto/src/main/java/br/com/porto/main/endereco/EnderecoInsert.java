@@ -1,4 +1,4 @@
-package br.com.porto.main;
+package br.com.porto.main.endereco;
 
 import java.sql.SQLException;
 
