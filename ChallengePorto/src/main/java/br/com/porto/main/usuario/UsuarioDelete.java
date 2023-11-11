@@ -1,4 +1,4 @@
-package br.com.porto.main.Usuario;
+package br.com.porto.main.usuario;
 
 import java.sql.SQLException;
 

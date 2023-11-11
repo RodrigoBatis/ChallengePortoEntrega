@@ -1,4 +1,4 @@
-package br.com.porto.main.Usuario;
+package br.com.porto.main.usuario;
 
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -16,6 +16,10 @@ public class UsuarioInsert {
 	
 	static Long id (String j) {
 		return Long.parseLong(JOptionPane.showInputDialog(j));
+	}
+	
+	static int inteiro (String j) {
+		return Integer.parseInt(JOptionPane.showInputDialog(j));
 	}
 	
 	public static void main(String[] args) throws ClassNotFoundException, SQLException, ParseException {
