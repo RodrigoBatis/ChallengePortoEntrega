@@ -9,8 +9,8 @@ import br.com.porto.dao.TipoUsuarioDAO;
 
 public class TipoUsuarioDelete {
 
-	static Long id (String j) {
-		return Long.parseLong(JOptionPane.showInputDialog(j));
+	static int id (String j) {
+		return Integer.parseInt(JOptionPane.showInputDialog(j));
 	}
 	
 	public static void main(String[] args) throws SQLException, ClassNotFoundException {

@@ -63,7 +63,7 @@ public class GuinchApp {
 		
 		do {
 			objTipoUsuario = new TipoUsuario();
-			objTipoUsuario.setIdTipoUsuario(id("Digite o id do tipo usuario: "));
+			objTipoUsuario.setIdTipoUsuario(inteiro("Digite o id do tipo usuario: "));
 			objTipoUsuario.setNivelAcesso(texto("Digite o nivel de acesso do tipo usuario: "));
 			listaTipoUsuarios.add(objTipoUsuario);
 			
