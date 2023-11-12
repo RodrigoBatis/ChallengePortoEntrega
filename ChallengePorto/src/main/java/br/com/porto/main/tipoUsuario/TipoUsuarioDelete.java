@@ -18,7 +18,7 @@ public class TipoUsuarioDelete {
 		TipoUsuarioDAO dao = new TipoUsuarioDAO();
 		TipoUsuario objTipoUsuario = new TipoUsuario();
 		
-		objTipoUsuario.setIdTipoUsuario(id("Digite o codigo do cliente a ser deletado: "));
+		objTipoUsuario.setIdTipoUsuario(id("Digite o codigo do tipo usuario a ser deletado: "));
 		System.out.println(dao.deletar(objTipoUsuario.getIdTipoUsuario()));
 
 	}

@@ -31,7 +31,7 @@ public class CategoriaTarifariaUpdate {
 		objCategoriaTarifaria.setValorBase(decimal("Digite o valor base da Categoria Tarifaria: "));
 		objCategoriaTarifaria.setValorPesoMaximo(decimal("Digite o peso maximo da Categoria Tarifaria: "));
 		
-		System.out.println(dao.insert(objCategoriaTarifaria));
+		System.out.println(dao.atualizar(objCategoriaTarifaria));
 
 	}
 

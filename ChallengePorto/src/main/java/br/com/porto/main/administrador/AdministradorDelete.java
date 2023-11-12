@@ -18,7 +18,7 @@ public class AdministradorDelete {
 		AdministradorDAO dao = new AdministradorDAO();
 		Administrador objAdministrador = new Administrador();
 		
-		objAdministrador.setIdAdministrador(id("Digite o codigo do cliente a ser deletado: "));
+		objAdministrador.setIdAdministrador(id("Digite o codigo do administrador a ser deletado: "));
 		System.out.println(dao.deletar(objAdministrador.getIdAdministrador()));
 
 	}

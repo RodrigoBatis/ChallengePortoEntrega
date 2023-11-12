@@ -32,8 +32,8 @@ public class ApoliceInsert {
 		objApolice.setNumeroApolice(texto("Digite o Número da Apolice: "));
 		objApolice.setNumeroEndosso(texto("Digite o Número do Endosso: "));
 		objApolice.setNumeroProposta(texto("Digite o Número da Proposta: "));
-		objApolice.setDataInicioVigente(texto("Digite a Data de Inicio da Apolice: "));
-		objApolice.setDataFinalVigente(texto("Digite a Data Final da Apolice: "));
+		objApolice.setDataInicioVigente(texto("Digite a Data de Inicio da Apolice (dd/mm/yyyy): "));
+		objApolice.setDataFinalVigente(texto("Digite a Data Final da Apolice (dd/mm/yyyy): "));
 		objApolice.setDescricaoApolice(texto("Digite a Descrição da Apolice: "));
 		objApolice.setValorPremioTotal(decimal("Digite o Valor Premio da Apolice: "));
 		

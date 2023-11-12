@@ -33,10 +33,10 @@ public class UsuarioInsert {
 		objUsuario.setNome(texto("Digite o Nome do Usuario: "));
 		objUsuario.setEmail(texto("Digite o E-mail do Usuario: "));
 		objUsuario.setCpf(texto("Digite o CPF do Usuario: "));
-		objUsuario.setDataNascimento(texto("Digite a Data de Aniversario do Usuario: "));
+		objUsuario.setDataNascimento(texto("Digite a Data de Nascimento do Usuario (dd/mm/yyyy): "));
 		objUsuario.setCelular(texto("Digite o Celular do Usuario: "));
 		objUsuario.setSenha(texto("Digite a Senha do Usuario: "));
-		objUsuario.setDataCadastro(texto("Digite a Data de Cadastramento do Usuario: "));
+		objUsuario.setDataCadastro(texto("Digite a Data de Cadastramento do Usuario (dd/mm/yyyy): "));
 		
 		System.out.println(dao.insert(objUsuario));
 

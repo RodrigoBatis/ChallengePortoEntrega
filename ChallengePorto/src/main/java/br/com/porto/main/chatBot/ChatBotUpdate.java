@@ -32,10 +32,10 @@ public class ChatBotUpdate {
 		objChatBot.setIdOrdemServico(id("Diigte o ID da Ordem Serviço: "));
 		objChatBot.setTextoEntrada(texto("Digite o texto de entreda: "));
 		objChatBot.setTextoSaida(texto("Digite o texto de saida: "));
-		objChatBot.setDataMensagem(texto("Digite a data da mensagem: "));
+		objChatBot.setDataMensagem(texto("Digite a data da mensagem (dd/mm/yyyy): "));
 		objChatBot.setDescricaoIntencao(texto("Digite a descrição da intenção do ChatBot: "));
 		
-		System.out.println(dao.insert(objChatBot));
+		System.out.println(dao.atualizar(objChatBot));
 
 	}
 
